@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[DeleteUser]]>
+    </line>
+    <line>
+      <![CDATA[EditUser]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="53175" started-at="2019-08-21T14:15:06Z" finished-at="2019-08-21T14:15:59Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="53175" started-at="2019-08-21T14:15:06Z" finished-at="2019-08-21T14:15:59Z">
+      <class name="com.actitime.testscript.CreateUserNew">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.actitime.testscript.CreateUserNew@1fbc7afb]" name="launchBrowser" is-config="true" duration-ms="9297" started-at="2019-08-21T19:45:06Z" finished-at="2019-08-21T19:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.actitime.testscript.CreateUserNew@1fbc7afb]" name="login" is-config="true" duration-ms="4005" started-at="2019-08-21T19:45:16Z" finished-at="2019-08-21T19:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testCreateUser()[pri:0, instance:com.actitime.testscript.CreateUserNew@1fbc7afb]" name="testCreateUser" duration-ms="12286" started-at="2019-08-21T19:45:20Z" finished-at="2019-08-21T19:45:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.actitime.testscript.CreateUserNew@1fbc7afb]" name="logout" is-config="true" duration-ms="4661" started-at="2019-08-21T19:45:32Z" finished-at="2019-08-21T19:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.actitime.testscript.CreateUserNew@1fbc7afb]" name="closeBrowser" is-config="true" duration-ms="4015" started-at="2019-08-21T19:45:55Z" finished-at="2019-08-21T19:45:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.actitime.testscript.CreateUserNew -->
+      <class name="com.actitime.testscript.DeleteUser">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.actitime.testscript.DeleteUser@5a39699c]" name="login" is-config="true" duration-ms="1718" started-at="2019-08-21T19:45:37Z" finished-at="2019-08-21T19:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="testDeleteUser()[pri:0, instance:com.actitime.testscript.DeleteUser@5a39699c]" name="testDeleteUser" duration-ms="5604" started-at="2019-08-21T19:45:38Z" finished-at="2019-08-21T19:45:44Z">
+          <reporter-output>
+            <line>
+              <![CDATA[DeleteUser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.actitime.testscript.DeleteUser@5a39699c]" name="logout" is-config="true" duration-ms="4690" started-at="2019-08-21T19:45:44Z" finished-at="2019-08-21T19:45:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.actitime.testscript.DeleteUser -->
+      <class name="com.actitime.testscript.EditUser">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.actitime.testscript.EditUser@2c8d66b2]" name="login" is-config="true" duration-ms="1827" started-at="2019-08-21T19:45:49Z" finished-at="2019-08-21T19:45:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="testEditUser()[pri:0, instance:com.actitime.testscript.EditUser@2c8d66b2]" name="testEditUser" duration-ms="5" started-at="2019-08-21T19:45:50Z" finished-at="2019-08-21T19:45:50Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at com.actitime.testscript.EditUser.testEditUser(EditUser.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[EditUser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testEditUser -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:com.actitime.testscript.EditUser@2c8d66b2]" name="logout" is-config="true" duration-ms="4864" started-at="2019-08-21T19:45:51Z" finished-at="2019-08-21T19:45:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- com.actitime.testscript.EditUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
